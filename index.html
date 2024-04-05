@@ -1,85 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./resources/styles/style.css">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="./resources/images/CoderCatNoBackground.png"
+      type="image/x-icon"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./resources/styles/pe-icon-7-stroke.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./resources/styles/pe-helper.css"
+    />
+    <link rel="stylesheet" href="./resources/styles/bootstrap-icons.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./resources/styles/all.min.css"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link href="./resources/styles/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./resources/styles/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./resources/styles/leaflet.css" />
+    <link rel="stylesheet" href="./resources/styles/aos.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./resources/styles/style.css"
+    />
+
+    <!-- font awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/3021dfb2e8.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Jorge Medina</title>
-</head>
-<body>
-<header>
-    <nav>
-        <h2 id="logo">Jorge Medina</h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <section id="home">
-        <h2>Hello, I'm <br> Jorge Medina <br> a Full-Stack Developer</h2>
-        <img src="./resources/images/ProfilePhoto.jfif" alt="ProfilePhoto">
-        <a href="#portfolio">View my portfolio</a>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#site-navbar"
+    class="home-consultant"
+  >
+    <!-- SITE HEADER -->
+    <header class="site-header" id="site-header">
+      <nav class="navbar navbar-expand-xl" id="site-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#site-header"
+            ><img
+              class="img-fluid"
+              src="./resources/images/CoderCatNoBackground.png"
+              alt="cat_logo"
+              width="90"
+              height="90"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#site-header"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-section">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio-section">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-section">Contact</a>
+              </li>
+            </ul>
+            <!-- .navbar-nav -->
+          </div>
+          <!-- .collapse -->
+        </div>
+        <!-- .container -->
+      </nav>
+      <!-- .navbar -->
+    </header>
+    <!-- .site-header -->
 
+    <!-- HERO Section -->
+    <section class="hero-area" id="hero-area">
+      <div class="container">
+        <div class="hero-content d-flex">
+          <div class="row d-flex align-items-center">
+            <div class="col-xl-6 content-block">
+              <h1><span>Hello, I'm</span>Jorge <strong>Medina</strong></h1>
+              <p>A Full Stack Developer</p>
+              <div class="link-group">
+                <a class="btn-main" href="#portfolio-section"
+                  >View My Portfolio</a
+                >
+              </div>
+            </div>
+            <div class="col-xl-6 image-block">
+              <div class="block-wrapper">
+                <div class="image-wrapper">
+                  <img
+                    class="rounded-border"
+                    src="./resources/images/circle_border.png"
+                    alt="rounded border"
+                  />
+                  <img
+                    class="img-fluid profile-fluid-img"
+                    src="./resources/images/ProfilePhoto.jfif"
+                    alt="profileimage"
+                  />
+                </div>
+                <ul class="fun-facts">
+                  <li>
+                    <span><i class="fa-solid fa-plus"></i></span>
+                    <h3>Attention <br />To-Detail</h3>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-plus"></i></span>
+                    <h3>Team <br />Oriented</h3>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-plus"></i></span>
+                    <h3>Problem <br />Solver</h3>
+                  </li>
+                </ul>
+              </div>
+              <!-- .block-wrapper -->
+            </div>
+          </div>
+          <!-- .row -->
+          <!-- <img class="signature-img img-fluid" src="image/signature_img.png" alt="signature image"> -->
+        </div>
+        <!-- .hero-content -->
+      </div>
+      <!-- .container -->
     </section>
-    <section id="about-me">
-        <img src="./resources/images/ProfJapan.jpg" alt="ProfJapan">
-        <img src="./resources/images/CatsPortfolio.jpg" alt="Cats">
-        <h3>About me</h3>
-        <p>
-            I'm a Debugging Engineer at Microsoft. When I'm not untangling code,
-            you can find me hitting the trails for some hiking adventures or
-            getting into a thrilling horror movie.
-        </p>
-        <p>
-            I'm also all about leveling up my skills in Game Development during my
-            free time. Oh, and I can't forget about my furry companions, Tequila
-            and Tokio, the dynamic duo of the feline world, keeping my life
-            interesting one meow at a time.
-        </p>
-    <section id="skills">
-        <img src="./resources/images/html.png" alt="html" width="100" height="100">
-        <p>HTML</p>
-        <img src="./resources/images/CSS.png" alt="CSS" width="100" height="100">
-        <p>CSS</p>
-        <img src="./resources/images/js.png" alt="js" width="100" height="100">
-        <p>JavaScript</p>
-        <img src="./resources/images/git.png" alt="git" width="100" height="100">
-        <p>Git</p>
-        <img src="./resources/images/github-mark.png" alt="github" width="100" height="100">
-        <p>GitHub</p>
-    </section>
-    </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <ul>
-            <li>E-Commerce Webpage</li>
-            <li>Booking</li>
-            <li>Social Media</li>
-            <li>Ticketing</li>
-            <li>Web-Based Game</li>
-        </ul>
-    </section>
-    <section id="cv">
-        <h2>My Career Journey</h2>
-        <img src="./resources/images/curriculum-vitae.png" alt="curriculum-vitae" width="200 " height="200">
-    </section>
-    <section id="contact">
-        <h2>GET IN TOUCH</h2>
-        <img src="./resources/images/linkedin.png" alt="linkedin" width="100" height="100">
-        <img src="./resources/images/facebook.png" alt="facebook" width="100" height="100">
-        <img src="./resources/images/twitter.png" alt="twitter" width="100" height="100">
-        
-        <!--Create Input Contact Table Pending-->
+    <!-- .hero-area end -->
 
+    <!-- ABOUT SECTION -->
+    <section class="about-section section-block" id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 image-block">
+            <div class="img-wrapper about-img-wrap">
+              <img
+                class="about-img-1 img-fluid desktop-comp-image"
+                src="./resources/images/ProfJapan.jpg"
+                alt="japan-photo"
+              />
+              <img
+                class="about-img-2 img-fluid desktop-image"
+                src="./resources/images/CatsPortfolio.jpg"
+                alt="cats"
+              />
+            </div>
+          </div>
+          <div class="col-xl-6 content-block">
+            <h2><span>About Me</span></h2>
+            <p>
+              I'm a Debugging Engineer at Microsoft based on Costa Rica. <br />
+              When I'm not untangling code, you can find me hitting the trails.
+              <br />
+              for some hiking adeventures or getting into a thrilling horror
+              movie. <br />
+              I'm also all bout leveling up my skills in Game Development during
+              my free time. Oh, and I can't forget about my furry companions,
+              Tequila and Tokio, the dynamic duo keeping my life interesting one
+              meow at a time.
+            </p>
+            <div class="personal-details row">
+              <div class="col-md-6">
+                <ul class="personal-info">
+                  <li>
+                    <h4>Name</h4>
+                    <p>Jorge Medina</p>
+                  </li>
+                  <li>
+                    <h4>Email</h4>
+                    <p>jonunezm@outlook.com</p>
+                  </li>
+                </ul>
+                <!-- .personal-info -->
+              </div>
+              <!-- .col-md-6 -->
+              <div class="col-md-6">
+                <ul class="personal-info">
+                  <li>
+                    <h4>Phone</h4>
+                    <p>+506 6479-1094</p>
+                  </li>
+                  <li>
+                    <h4>Employment</h4>
+                    <p>Open</p>
+                  </li>
+                </ul>
+                <!-- .personal-info -->
+              </div>
+              <!-- .col-md-6 -->
+            </div>
+            <!-- .personal-details -->
+            <a class="btn-main" href="#">Download CV</a>
+          </div>
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .container -->
     </section>
-</main>
-</body>
-<footer>
-    <p>All rights reserved ©️2024 Jorge Medina</p>
-    <img src="./resources/images/github-mark.png" alt="github" width="50" height="50">
-</footer>
+    <!-- .about-section end -->
+
+    <!-- SKILL SECTION -->
+    <section class="partner-section" id="partner-section">
+      <div class="container">
+        <div class="partnerCarousel">
+          <div class="image-wrapper">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div class="image-wrapper">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
+          <div class="image-wrapper">
+            <i class="fa-brands fa-square-js"></i>
+            <p>JavaScript</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- .partner section end -->
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio-section section-block" id="portfolio-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Portfolio</h2>
+        </div>
+        <div class="row grid">
+
+          <!-- wordpress landing page -->
+          <div class="col-lg-4 col-md-6 grid-item wordpress">
+            <div class="box box_border">
+              <img
+                src="./resources/images/Portfolio/BookingWebpage.jpg"
+                alt="wordpress-landing-page"
+              />
+              <div class="box-content">
+                <span class="category">Booking</span>
+                <h3 class="title">Hostel Booking Page</h3>
+              </div>
+              <div class="icon-box">
+                <a href="https://wvdigitalbrand.com/" target="_blank"
+                  ><i class="bi bi-plus-lg"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- podcast landing page -->
+          <div class="col-lg-4 col-md-6 grid-item html">
+            <div class="box box_border">
+              <img
+                src="./resources/images/Portfolio/E-Commerce.jpg"
+                alt="podcast-landing-page"
+              />
+              <div class="box-content">
+                <span class="category">E-Commerce</span>
+                <h3 class="title">E-Commerce Webpage</h3>
+              </div>
+              <div class="icon-box">
+                <a
+                  href="https://wvprogram.github.io/podLandingPage/"
+                  target="_blank"
+                  ><i class="bi bi-plus-lg"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- shopify landing page -->
+          <div class="col-lg-4 col-md-6 grid-item application shopify">
+            <div class="box box_border">
+              <img
+                src="./resources/images/Portfolio/MovieBookingWebsite.jpg"
+                alt="shopify-landing-page"
+              />
+              <div class="box-content">
+                <span class="category">Movie Booking</span>
+                <h3 class="title">Movie Booking Website</h3>
+              </div>
+              <div class="icon-box">
+                <a href="https://wavangtech.myshopify.com/" target="_blank"
+                  ><i class="bi bi-plus-lg"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- mobile app landing page -->
+          <div class="col-lg-4 col-md-6 grid-item html">
+            <div class="box box_border">
+              <img
+                src="./resources/images/Portfolio/SocialWebsite.jpg"
+                alt="social-media-website"
+              />
+              <div class="box-content">
+                <span class="category">Social Media</span>
+                <h3 class="title">Social Media Website</h3>
+              </div>
+
+              <div class="icon-box">
+                <a
+                  href="https://wvprogram.github.io/healthcareldp/"
+                  target="_blank"
+                  ><i class="bi bi-plus-lg"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- mobile app landing page -->
+          <div class="col-lg-4 col-md-6 grid-item html">
+            <div class="box box_border">
+              <img
+                src="./resources/images/Portfolio/WebApp.jpg"
+                alt="mobile-app-landing-page"
+              />
+              <div class="box-content">
+                <span class="category">Web Application</span>
+                <h3 class="title">Task Management</h3>
+              </div>
+              <div class="icon-box">
+                <a
+                  href="https://wvprogram.github.io/mobileAppLandingPage/"
+                  target="_blank"
+                  ><i class="bi bi-plus-lg"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          
+          <!-- transactional html email -->
+          <div class="col-lg-4 col-md-6 grid-item email">
+            <div class="box box_border">
+              <img src="./resources/images/Portfolio/ExpenseTrackerWebsite.jpg" alt="transaction-email" />
+              <div class="box-content">
+                <span class="category">Web Application</span>
+                <h3 class="title">Expense Tracker</h3>
+              </div>
+              <div class="icon-box">
+                <a
+                  href="https://wvprogram.github.io/transactionEmail/"
+                  target="_blank"
+                  ><i class="bi bi-plus-lg"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .container -->
+    </section>
+    <!-- .portfolio-section end -->
+
+    <!-- SKILL SECTION -->
+    <section class="skill-section section-block" id="skill-section">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .container -->
+    </section>
+    <!-- .skill-section -->
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section section-block" id="contact-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Get in Touch</h2>
+        </div>
+        <!-- .section-title -->
+        <div class="row">
+          <div
+            class="col-lg-6 leaflet-map-display"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <div class="map-wrapper" id="mapwrapper"></div>
+          </div>
+          <div
+            class="col-lg-6 form-block"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="1100"
+          >
+            <h3>Contact Me</h3>
+            <!-- <div class="form-message">
+						<p></p>
+					</div> -->
+            <form
+              class="row g-3"
+              type="contact-email"
+              name="contact-email"
+              method="POST"
+              action="https://formsubmit.co/265456ee07a208a5778587dae93d1b20"
+              target="_blank"
+            >
+              <div class="col-md-6">
+                <div class="input-group mb-3">
+                  <label for="inputName" class="form-label visually-hidden"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="Name*"
+                    name="inputName"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group mb-3">
+                  <label for="inputEmail" class="form-label visually-hidden"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail"
+                    name="inputEmail"
+                    placeholder="Email*"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="inputMessage" class="form-label visually-hidden"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control mb-3"
+                  id="inputMessage"
+                  name="inputMessage"
+                  placeholder="Your message here*"
+                  required
+                ></textarea>
+                <button type="submit" class="btn btn-main" name="submit">
+                  Send Message
+                </button>
+              </div>
+            </form>
+            <!-- .row -->
+          </div>
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .container -->
+    </section>
+    <!-- .contact-section -->
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer" id="site-footer">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-6 text-center branding-block">
+            <a class="footer-brand" href="#"
+              ><img src="image/images/logo.png" alt="wv-logo"
+            /></a>
+            <ul class="list-inline footer-social">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/xwmaxx/" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/wa-vang" target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/wvprogram" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- .row -->
+        <div class="back-to-top">
+          <a href="#site-header"><i class="bi bi-box-arrow-up"></i></a>
+        </div>
+        <div
+          class="row footer-bottom align-items-center justify-content-center"
+        >
+          <div class="col-md-6 text-center">
+            <p>All rights reserved &copy; 2023 <strong>Wa Vang</strong></p>
+          </div>
+        </div>
+        <!-- .footer-bottom -->
+      </div>
+      <!-- .container -->
+    </footer>
+    <!-- .site-footer -->
+  </body>
 </html>
